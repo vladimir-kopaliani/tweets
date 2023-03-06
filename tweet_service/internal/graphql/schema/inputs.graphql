@@ -1,0 +1,15 @@
+input GetTweetByIDInput {
+  id: ID!
+}
+
+input GetTweetsByUserIDInput {
+  userID: ID!
+}
+
+input CreateTweetInput {
+  message:  String!
+}
+
+input DeleteTweetInput {
+  id: ID!
+}

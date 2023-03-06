@@ -1,0 +1,4 @@
+type Query {
+  getTweetByID(input: GetTweetByIDInput!): Tweet
+  getTweetsByUserID(input: GetTweetsByUserIDInput!): [Tweet!]!
+}

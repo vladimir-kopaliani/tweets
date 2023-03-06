@@ -1,0 +1,32 @@
+syntax = "proto3";
+package user_service.v1;
+
+option go_package = "./;userservice";
+
+service UserService {
+  rpc GetUserByID(GetUserByIDRequest) returns (GetUserByIDResponse);
+  rpc CheckRegisteredUser(CheckRegisteredUserRequest) returns (CheckRegisteredUserResponse);
+}
+
+message GetUserByIDRequest {
+  string id = 1;
+}
+
+message GetUserByIDResponse {
+  User user = 1;
+}
+
+message User {
+  string id = 1;
+  string first_name = 2;
+  string last_name = 3;
+}
+
+message CheckRegisteredUserRequest {
+  string email = 1;
+  string password = 2;
+}
+
+message CheckRegisteredUserResponse {
+  string user_id = 1;
+}

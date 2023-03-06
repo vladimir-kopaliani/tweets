@@ -1,0 +1,4 @@
+type Mutation {
+  login(loginInput: LoginInput!): SignInResult!
+  refreshTokens(refreshTokensInput: RefreshTokensInput!): RefreshTokensResult!
+}

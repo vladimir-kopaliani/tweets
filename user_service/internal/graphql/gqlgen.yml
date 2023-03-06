@@ -1,0 +1,29 @@
+schema:
+  - schema/*.graphql
+
+exec:
+  filename:          gen.go
+  package:           graphql
+
+# federation:
+#   filename:        federation_gen.go
+#   package:         graphql
+#   version:         2
+
+model:
+  filename:          ../entities/models_gen.go
+  package:           entities
+
+resolver:
+  layout:            follow-schema
+  dir:               .
+  package:           graphql
+  filename_template: "resolvers_{name}.go"
+
+autobind:
+  - "github.com/vladimir-kopaliani/tweets/user_service/internal/entities"
+
+models:
+  DateTime:
+    model:
+      - "github.com/vladimir-kopaliani/tweets/user_service/internal/entities.DateTime"

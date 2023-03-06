@@ -1,0 +1,18 @@
+type User {
+  id:           ID!
+  firstName:    String!
+  lastName:     String!
+  email:        String
+  registeredAt: DateTime!
+}
+
+type SignInResult {
+  accessToken:  String!
+  refreshToken: String!
+  user:         User!
+}
+
+type RefreshTokensResult {
+  accessToken:  String!
+  refreshToken: String!
+}

@@ -1,0 +1,2 @@
+"""Authentication is required. Token has to be in "Authorization" header and has "Bearer " prefix."""
+directive @requiredAuthentication on FIELD_DEFINITION

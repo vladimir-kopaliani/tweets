@@ -1,0 +1,4 @@
+type Mutation {
+  createTweet(input: CreateTweetInput!): Tweet! @requiredAuthentication
+  deleteTweet(input: DeleteTweetInput!): Result! @requiredAuthentication
+}

@@ -1,0 +1,2 @@
+"""Stores date and time in RFC 339 format. For example `"2021-12-31T10:30:05Z03:00"`."""
+scalar DateTime

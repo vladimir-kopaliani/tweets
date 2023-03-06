@@ -1,0 +1,4 @@
+type Mutation {
+  """Register new user via email."""
+  registerViaEmail(registerViaEmailInput: RegisterViaEmailInput!): User!
+}

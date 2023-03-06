@@ -1,0 +1,10 @@
+type Result {
+  success: Boolean!
+}
+
+type Tweet {
+  id:           ID!
+  authorID:     ID!
+  message:      String!
+  createdAt:    DateTime!
+}

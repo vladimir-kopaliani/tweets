@@ -1,0 +1,13 @@
+/build
+/vendor
+
+# Application configuration
+configs/.env
+
+# GraphQL
+internal/graphql/gen.go
+internal/graphql/federation_gen.go
+internal/entities/models_gen.go
+
+# gRPC
+# pkg/protobuf/**/*.pb.go
